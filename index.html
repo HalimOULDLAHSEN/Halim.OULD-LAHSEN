@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Ton Nom</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init("E2nceqWyEUuq_Yntx"); // remplace par ta clé publique EmailJS
+  })();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
+<body>
+  <div class="cv-container">
+
+    <!-- EN-TÊTE -->
+    <header class="header">
+      <div class="header-left">
+        <h1 class="animated-title">Halim OULD LAHSEN</h1>
+        <p class="job-title">Ingénieur, PhD Automaticien en recherche d'opportunitésdans l’automatisme, R&D ou pilotage de projets industriels.</p>
+      </div>
+      <div class="header-right">
+        <img src="ma-photo.jpg" alt="Photo de profil" class="profile-pic">
+      </div>
+    </header>
+
+    <!-- CONTENU PRINCIPAL -->
+    <div class="main-content">
+
+      <!-- COLONNE GAUCHE -->
+      <div class="left-column">
+
+        <!-- EXPÉRIENCES -->
+        <section>
+          <h2><i class="fa-solid fa-briefcase"></i> Expériences professionnelles</h2>
+
+          <div class="experience">
+            <h3>Développeur Web</h3>
+            <p><strong>Entreprise ABC</strong> — 2022 - 2023</p>
+            <ul>
+              <li class="tooltip">
+                Développement du site e-commerce
+                <span class="tooltip-text">
+                  <strong>Titre :</strong> Création site e-commerce <br>
+                  <strong>Détails :</strong> Réalisation complète du front-end et back-end. <br>
+                  <a href="https://exemple.com/projet1" target="_blank">Cliquez pour voir le projet</a>
+                </span>
+              </li>
+              <li class="tooltip">
+                Optimisation SEO du site
+                <span class="tooltip-text">
+                  <strong>Titre :</strong> Optimisation SEO <br>
+                  <strong>Détails :</strong> Mise en place de balises, optimisation des temps de chargement. <br>
+                  <a href="https://exemple.com/projet2" target="_blank">Cliquez pour voir le projet</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience">
+            <h3>Stage Développeur Front-end</h3>
+            <p><strong>Entreprise XYZ</strong> — 2021</p>
+            <ul>
+              <li class="tooltip">
+                Création d'une landing page responsive
+                <span class="tooltip-text">
+                  <strong>Titre :</strong> Landing page <br>
+                  <strong>Détails :</strong> Utilisation de HTML, CSS et JavaScript pour rendre la page dynamique. <br>
+                  <a href="https://hal.science/hal-04864033" target="_blank">Cliquez pour voir le projet</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- FORMATIONS -->
+        <section>
+          <h2><i class="fa-solid fa-graduation-cap"></i> Formations</h2>
+          <div class="education">
+            <h3>Licence Informatique</h3>
+            <p><strong>Université Exemple</strong> — 2020</p>
+            <ul>
+              <li>Option Développement Web</li>
+              <li>Projet de fin d'études : Création d’une application web</li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- COLONNE DROITE -->
+      <div class="right-column">
+
+        <!-- DÉTAILS PERSONNELS -->
+        <section>
+          <h2><i class="fa-solid fa-user"></i> Détails personnels</h2>
+          <p><i class="fa-solid fa-calendar"></i> Âge : 25 ans</p>
+          <p><i class="fa-solid fa-house"></i> Adresse : 123 Rue Exemple, Ville</p>
+          <p><i class="fa-solid fa-phone"></i> Téléphone : +33 6 12 34 56 78</p>
+          <p><i class="fa-solid fa-envelope"></i> Email : exemple@mail.com</p>
+          <p><i class="fa-brands fa-linkedin"></i> LinkedIn : linkedin.com/in/monprofil</p>
+        </section>
+
+        <!-- COMPÉTENCES -->
+        <section>
+          <h2><i class="fa-solid fa-tools"></i> Compétences</h2>
+          <p><strong>Logiciels :</strong> Word, Excel, Photoshop</p>
+          <p><strong>Programmation :</strong> HTML, CSS, JS, Python</p>
+          <p><strong>Compétences générales :</strong> Organisation, Communication, Gestion de projet</p>
+        </section>
+
+        <!-- LANGUES -->
+        <section>
+          <h2><i class="fa-solid fa-language"></i> Langues</h2>
+          <ul>
+            <li>Français (Natif)</li>
+            <li>Anglais (Courant)</li>
+            <li>Arabe (Courant)</li>
+          </ul>
+        </section>
+
+        <!-- CENTRES D'INTÉRÊT -->
+        <section>
+          <h2><i class="fa-solid fa-heart"></i> Centres d'intérêt</h2>
+          <ul>
+            <li>Sport, Lecture, Voyages</li>
+          </ul>
+        </section>
+<section>
+  <h2><i class="fa-solid fa-envelope"></i> Me contacter</h2>
+
+  <form id="contact-form">
+  <input type="text" id="user-name" placeholder="Votre nom" required>
+  <input type="email" id="user-email" placeholder="Votre email" required>
+  <button type="submit">S’inscrire</button>
+</form>
+  <p id="confirmation" style="display:none; color:green; margin-top:10px;">
+    ✅ Bravo, vous faites partie maintenant de la liste de Halim !
+  </p>
+</section>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
