@@ -1,0 +1,143 @@
+body {
+  font-family: 'Helvetica', Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.cv-container {
+  max-width: 950px;
+  margin: auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+}
+
+/* EN-TÊTE */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #007BFF;
+  animation: fadeInDown 1s ease forwards;
+}
+
+.job-title {
+  margin: 5px 0 0 0;
+  font-weight: 400;
+  color: #555;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* CONTENU PRINCIPAL */
+.main-content {
+  display: flex;
+  gap: 40px;
+}
+
+/* COLONNES */
+.left-column { flex: 2; }
+.right-column { flex: 1; }
+
+/* SECTIONS */
+section { margin-bottom: 25px; }
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 5px;
+  color: #007BFF;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: fadeInLeft 1s ease forwards;
+}
+h3 { margin: 10px 0 5px 0; }
+ul { list-style-type: disc; padding-left: 20px; }
+p, li { line-height: 1.5; font-size: 14px; }
+
+/* Tooltips */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.tooltip-text {
+  visibility: hidden;
+  width: 280px;
+  background-color: #007BFF;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 100;
+  top: -5px;
+  left: 105%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 13px;
+}
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip-text a {
+  color: #FFD700;
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-20px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeInLeft {
+  0% { opacity: 0; transform: translateX(-20px);}
+  100% { opacity: 1; transform: translateX(0);}
+}
+
+
+#contact-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+#contact-form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#contact-form button {
+  padding: 8px 12px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#contact-form button:hover {
+  background: #0056b3;
+}
